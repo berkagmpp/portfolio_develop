@@ -1,0 +1,424 @@
+/*=======================================*/
+
+/*			 Table of contents           */
+
+/*=======================================*/
+
+/*
+1. Typography
+2. Common content setting 
+3. Header
+4. Footer
+5. Index page
+6. Adjustment other pages
+7. Media query
+
+
+
+/**--- 1. Typography ---**/
+
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    background: #e9edef;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.secondary {
+    font-size: 1rem;
+    color: #686868;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw900 {
+    font-weight: 900;
+}
+
+
+/**--- 2. Common content setting ---**/
+
+.content {
+    max-width: 95%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.p-10 {
+    padding: 10%;
+}
+
+.ps-10 {
+    padding-left: 10%;
+}
+
+.card-body {
+    align-items: center;
+}
+
+
+
+/**--- 3. Header ---**/
+
+nav {
+    background: unset;
+}
+
+.navbar {
+    background: #e9edef;
+    opacity: 80%;
+    padding: 5px;
+    height: 100vh;
+    max-width: 400px;
+}
+
+.spin-letters {
+    font-size: 2rem;
+    text-indent: 8px;
+    margin: 0;
+    margin-bottom: 3rem; 
+    padding: 0;
+}
+
+.letter-esign {
+    color: #ba00a0;
+    font-weight: 500;
+    display: block;
+    padding: 0;
+}
+
+.letter-d {
+    color: #029de4;
+    font-weight: 700;
+    padding: 0;
+}
+
+.horizontalFlip {
+    padding: 0;
+}
+
+.horizontalFlip span {
+    display: block;
+    padding: -12px;
+    animation: horizontal 10s linear infinite;
+	-ms-animation: horizontal 20s linear infinite   ;
+	-webkit-animation: horizontal 20s linear infinite;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 10s;
+	overflow: hidden;
+	position: absolute;
+}
+
+/* .horizontalFlip span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+} */
+
+/*Horizontal Flip Animation*/
+@keyframes horizontal{
+    0% { transform: rotateX(0deg);}
+    10% {transform: rotateX(360deg);}
+	20% { transform: rotateX(0deg);}
+    25% {transform: rotateX(360deg);}
+    27.5% { transform: rotateX(0deg);}
+    29.2% {transform: rotateX(360deg);}
+    30% {transform: rotateX(0deg);}
+    30.4% {transform: rotateX(360deg);}
+    30.6% {transform: rotateX(0deg);}
+    30.7% {transform: rotateX(360deg);}
+    30.8% {transform: rotateX(0deg);}
+    30.9% {transform: rotateX(360deg);}
+    31% {transform: rotateX(0deg);}
+    31.1% {transform: rotateX(360deg);}
+    31.2% {transform: rotateX(0deg);}
+    31.3% {transform: rotateX(360deg);}
+    31.4% {transform: rotateX(0deg);}
+    31.6% {transform: rotateX(360deg);}
+    32% {transform: rotateX(0deg);}
+    32.8% {transform: rotateX(360deg);}
+    34.5% {transform: rotateX(0deg);}
+    37% {transform: rotateX(360deg);}
+    42% {transform: rotateX(0deg);}
+    52% {transform: rotateX(360deg);}
+    65% {transform: rotateX(0deg);}
+}
+
+@keyframes letter-d {
+    0%, 80% {
+        transform: rotateX(360deg);
+    }
+}
+
+
+.navbar-dis li {
+    margin: 15px 10px;
+    white-space: nowrap;
+}
+
+.nav-item a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #515963;
+    
+}
+
+.nav-item a:hover, a:active {
+    font-weight: 700;
+    color: rgb(31, 166, 215);
+}
+
+.active-link a {
+    font-weight: 700;
+    color: #e300a7;
+}
+
+.nav-link {
+    color: white;
+}
+
+.sub li a {
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+    padding: 0;
+}
+
+
+
+/**--- 4. Main ---**/
+
+.main-span {
+    color: #e300a7;
+}
+
+.circle {
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#shape-1, #shape-2 {
+    min-width: 20vw;
+    height: 20vw;
+    mix-blend-mode: multiply;
+}
+
+#shape-1 {
+    background-color: rgb(195, 222, 251);
+    left: 48vw;
+    top: 40vh;
+    filter: blur(30px);
+}
+
+#shape-2 {
+    border: 5px solid rgb(226, 158, 210);
+    left: 25vw;
+    top: 25vh;
+    filter: blur(12px);
+}
+
+#shape-3 {
+    border: 1px solid rgb(254, 159, 49);
+    min-width: 10vw;
+    height: 10vw;
+    mix-blend-mode: multiply;
+    left: 32vw;
+    top: 10vh;
+    filter: blur(3px);
+}
+
+#shape-4 {
+    border: 1px solid rgb(49, 117, 254);
+    min-width: 30vw;
+    height: 30vw;
+    mix-blend-mode: multiply;
+    left: 35vw;
+    top: 13vh;
+    filter: blur(3px);
+}
+
+
+#featured-img {
+    z-index: 10;
+    margin-top: -50px;
+    opacity: 100%;
+}
+
+.scale-up-center {
+    animation: scale-up-center 7s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+    60% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+
+
+/**--- 5. UX UI page ---**/
+.uxui-main {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/**--- 6. Media query ---**/
+
+/* @media screen and (max-width: 1250px) {
+    f.nav-item a {
+        font-size: 0.9rem;
+    }
+} */
+
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.g-container {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    list-style: none;
+}
+
+.thumbnails li {
+    flex: auto;
+}
+
+
+.thumbnails a {
+    display: block;
+}
+
+.thumbnails img {
+    width: 27vmin;
+    height: 18vmin;
+    object-fit: cover;
+    object-position: top;
+}
+
+.slides {
+    overflow: hidden;
+    width: 75vmin;
+    height: 100vmin;
+    list-style: none;
+    margin-right: 10vmin;
+}
+
+.slides li {
+    width: 67.5vmin;
+    height: 90vmin;
+    position: absolute;
+    z-index: 1;
+}
+
+.slides li:target {
+    z-index: 3;
+    animation: slide 1s 1;
+}
+
+.slides li:not(:target) {
+    animation: hidden 1s 1;
+}
+
+.slides img {
+    height: 98vmin;
+    object-fit: cover;
+    object-position: top;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+        opacity: 30%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes hidden {
+    0% {
+        z-index: 2;
+    }
+
+    100% {
+        z-index: 2;
+    }
+}
+
